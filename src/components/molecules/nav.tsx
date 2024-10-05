@@ -4,6 +4,7 @@ import {
   faAddressBook,
   faCalendarDay,
   faCalendarDays,
+  faClockRotateLeft,
   faPlusCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import useModal from "../atom/useModal";
@@ -44,6 +45,12 @@ const Nav: React.FC = () => {
                 <FontAwesomeIcon icon={faCalendarDays} />
               </svg>
               <a href="#" className="text-white hover:text-mto_sky_blue transition-colors">Próximo</a>
+            </li>
+            <li className="flex space-x-4 items-center hover:text-indigo-600 cursor-pointer">
+              <svg className="h-6 w-6 text-mto_pink hover:text-mto_sky_blue hover:transition-colors">
+                <FontAwesomeIcon icon={faClockRotateLeft} />
+              </svg>
+              <a href="#" className="text-white hover:text-mto_sky_blue transition-colors">History</a>
             </li>
           </ul>
 
